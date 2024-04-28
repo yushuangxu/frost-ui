@@ -1,0 +1,51 @@
+.frost-collapse{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: #000000d9;
+    font-size: 14px;
+    font-variant: tabular-nums;
+    line-height: 1.5715;
+    list-style: none;
+    font-feature-settings: "tnum";
+    background-color: #fafafa;
+    border: 1px solid #d9d9d9;
+    border-bottom: 0;
+    border-radius: 2px;
+    
+}
+.frost-collapse-item{
+    border-bottom: 1px solid #d9d9d9;
+}
+.frost-collapse-header{
+    position: relative;
+    padding: 12px 16px;
+    color: #000000d9;
+    line-height: 1.5715;
+    cursor: pointer;
+    transition: all .3s,visibility 0s;
+    img{
+        width: 12px;
+        height: 12px;
+        vertical-align: middle;
+        margin-right: 12px;
+    }
+}
+.frost-collapse-content{
+    color: #000000d9;
+    background-color: #fff;
+    border-top: 1px solid #d9d9d9;
+    padding: 0 10px;
+    overflow: hidden;
+}
+.frost-collapse-content-hidden{
+    opacity: 0;
+}
+.frost-collapse-img{
+    transition: all .3s,visibility 0s;
+    transform: rotate(90deg);
+}
+.frost-collapse-img-active{
+    transition: all .3s,visibility 0s;
+    transform: rotate(0);
+}

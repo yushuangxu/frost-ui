@@ -1,0 +1,40 @@
+{
+    "compilerOptions": {
+      "outDir": "./dist/",
+      // "rootDir": "./src",
+      "sourceMap": true, // 开启sourcemap
+      "module": "commonjs",
+      "target": "ES6",
+      "jsx": "preserve",
+      "esModuleInterop": true,
+      "allowJs": true,
+      "strict": true,
+      "baseUrl": ".",
+      "paths": {
+        "@/*": [
+          "src/*"
+        ]
+      },
+      "lib": [
+        "dom",
+        "dom.iterable",
+        "esnext"
+      ],
+      "skipLibCheck": true,
+      "forceConsistentCasingInFileNames": true,
+      "noEmit": true,
+      "incremental": true,
+      "moduleResolution": "node",
+      "resolveJsonModule": true,
+      "isolatedModules": true
+    },
+    "exclude": [
+      "node_modules"
+    ],
+    "include": [
+      "next-env.d.ts",
+      "**/*.ts",
+      "**/*.tsx"
+    ]
+  }
+  

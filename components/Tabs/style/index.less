@@ -1,0 +1,44 @@
+.tabs{
+    &-list{
+        display: flex;
+        border: 1rpx solid #cccc;
+        position: relative;
+        &::before{
+            position: absolute;
+            right: 0;
+            left: 0;
+            border-bottom: 1px solid #f0f0f0;
+            content: "";
+            bottom: 0;
+        }
+    }
+    &-item-title{
+        padding: 12px 0;
+        font-size: 14px;
+    }
+    &-item-title:nth-child(n+2){
+        
+        margin: 0 0 0 32px;
+    }
+    &-item-title-active{
+        color: #1890ff;
+        text-shadow: 0 0 .25px currentColor;
+    }
+    &-ink-bar{
+        position: absolute;
+        background: #1890ff;
+        pointer-events: none;
+        width: 42px;
+        height: 3px;
+        transition: all .3s;
+        bottom: 0;
+    }
+    &-nav-wrap{
+        position: relative;
+        display: flex;
+    }
+    &-nav-wrap-centered{
+        justify-content: center;
+    }
+
+}
